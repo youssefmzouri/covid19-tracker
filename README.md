@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Introduction
+
+This project was only for React applications learning.
 
 ## Steps
 
@@ -20,3 +22,13 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your covid19-tracker is ready to be deployed!
+
+##Important
+Notice there ara a .env.example file.
+This allows me to deploy the REACTAPP into a subfolder of my server.
+
+`www.myServer.com/covid19-tracker`
+
+If you want to deploy your app like me, only have to remove the string ".example" from the name of the file and edit the variable `PUBLIC_URL` with the name of your subfolder.
+<br/><br/>
+For more info: <br/> https://create-react-app.dev/docs/adding-custom-environment-variables/
