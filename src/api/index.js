@@ -7,12 +7,14 @@ export const fetchData = async (country) => {
     if(country) {
         changeableUrl = `${URL}/countries/${country}`;
     }
-    try {
-        const {data: { confirmed, recovered, deaths, lastUpdate }} = await axios.get(changeableUrl);
+
+    return await axios.get(changeableUrl).then((response) => {
+        const {data: { confirmed, recovered, deaths, lastUpdate }} = response;
         return { confirmed, recovered, deaths, lastUpdate };
-    } catch(e) {
-        console.log(e);
-    }
+    }).catch((error) => {
+        console.log(`ERROR getting country ${country}`, error.toJSON());
+        return {code: 404, message: "Country not found..."};
+    });
 };
 
 export const fetchDailyData = async () => {
