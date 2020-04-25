@@ -1,5 +1,4 @@
-#Introduction
-
+## Introduction 
 This project was only for React applications learning.
 
 ## Steps
@@ -23,7 +22,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your covid19-tracker is ready to be deployed!
 
-##Important
+## Important
 Notice there ara a .env.example file.
 This allows me to deploy the REACTAPP into a subfolder of my server.
 
